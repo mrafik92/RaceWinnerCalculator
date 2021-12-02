@@ -5,6 +5,8 @@
 #include "KartPassingTimeCsvParser.h"
 #include "KartPassingTime.h"
 
+#include <fstream>
+
 #include <iostream>
 #include <regex>
 #include <string>
