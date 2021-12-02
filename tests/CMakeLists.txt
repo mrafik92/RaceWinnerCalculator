@@ -19,7 +19,7 @@ include_directories(tests/)
 add_executable(
         RaceWinnerCalcTest
         ${src_files}
-        KartTimeCsvParserTest.cpp)
+        WinnerClassTest.cpp KartTimeCsvParserTest.cpp)
 
 target_link_libraries(
         RaceWinnerCalcTest
