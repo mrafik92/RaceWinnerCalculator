@@ -75,6 +75,6 @@ public:
     {
         return !(*this < rhs);
     }
-}
+};
 
 #endif//RACEWINNERCALCULATOR_KARTPASSINGTIME_H
