@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
 file(GLOB src_files
-         src/timeUtils.cpp src/KartPassingTimeCsvParser.cpp)
+        src/WinnerCalculator.cpp src/timeUtils.cpp src/KartPassingTimeCsvParser.cpp)
 
 if (UNIT_TESTING)
     add_subdirectory(tests)
