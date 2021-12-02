@@ -4,4 +4,11 @@ project(RaceWinnerCalculator)
 set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
-add_executable(RaceWinnerCalculator main.cpp src/timeUtils.cpp src/KartPassingTimeCsvParser.cpp)
+file(GLOB src_files
+         src/timeUtils.cpp src/KartPassingTimeCsvParser.cpp)
+
+if (UNIT_TESTING)
+    add_subdirectory(tests)
+else ()
+    add_executable(RaceWinnerCalculator main.cpp ${src_files})
+endif ()
